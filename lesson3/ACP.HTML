@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable - Gr 6 C</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .timetable-container {
+            background: #ffffff;
+            border: 2px solid #000;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1.5px solid #000;
+            padding: 0;
+            font-size: 13px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        th {
+            font-weight: 800;
+            background-color: #e0e0e0;
+            font-size: 15px;
+            padding: 4px 0;
+        }
+
+        .time-slot {
+            font-size: 10px;
+            display: block;
+            color: #222;
+            font-weight: 700;
+        }
+
+        .day {
+            font-weight: 800;
+            font-size: 18px;
+            width: 50px;
+            background-color: #f0f0f0;
+        }
+
+        .vertical-header {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: 2px;
+            background-color: #f0f0f0;
+        }
+
+        .subject {
+            font-weight: 800;
+            font-size: 15px;
+            color: #000;
+        }
+
+        .teacher {
+            font-size: 11px;
+            font-weight: 700;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="timetable-container">
+        <h1>Gr 6 C</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>1<span class="time-slot">8:30–9:05</span></th>
+                    <th>2<span class="time-slot">9:05–9:40</span></th>
+                    <th>3<span class="time-slot">9:40–10:15</span></th>
+                    <th>Snacks<span class="time-slot">10:15–10:35</span></th>
+                    <th>4<span class="time-slot">10:35–11:10</span></th>
+                    <th>5<span class="time-slot">11:10–11:45</span></th>
+                    <th>6<span class="time-slot">11:45–12:20</span></th>
+                    <th>7<span class="time-slot">12:20–12:55</span></th>
+                    <th>Lunch<span class="time-slot">12:55–13:30</span></th>
+                    <th>8<span class="time-slot">13:30–14:05</span></th>
+                    <th>9<span class="time-slot">14:05–14:40</span></th>
+                    <th>10<span class="time-slot">14:40–15:15</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day">Mo</td>
+                    <td>
+                        <div class="subject">ASM</div>
+                        <div class="teacher">JB</div>
+                    </td>
+                    <td>
+                        <div class="subject">Math</div>
+                        <div class="teacher">BP</div>
+                    </td>
+                    <td>
+                        <div class="subject">SPE</div>
+                    </td>
+                    <td rowspan="5" class="vertical-header">Snacks</td>
+                    <td>
+                        <div class="subject">Bio</div>
+                        <div class="teacher">BB</div>
+                    </td>
+                    <td>
+                        <div class="subject">CR</div>
+                        <div class="teacher">PR</div>
+                    </td>
+                    <td>
+                        <div class="subject">CR</div>
+                        <div class="teacher">PR</div>
+                    </td>
+                    <td>
+                        <div class="subject">VA</div>
+                        <div class="teacher">BV</div>
+                    </td>
+                    <td rowspan="5" class="vertical-header">Lunch</td>
+                    <td>
+                        <div class="subject">VA</div>
+                        <div class="teacher">BV</div>
+                    </td>
+                    <td>
+                        <div class="subject">Math</div>
+                        <div class="teacher">BP</div>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="day">Tu</td>
+                    <td>
+                        <div class="subject">Activity</div>
+                    </td>
+                    <td>
+                        <div class="subject">Activity</div>
+                    </td>
+                    <td>
+                        <div class="subject">SPE</div>
+                    </td>
+                    <td>
+                        <div class="subject">PA</div>
+                    </td>
+                    <td>
+                        <div class="subject">Chem</div>
+                        <div class="teacher">JB</div>
+                    </td>
+                    <td>
+                        <div class="subject">DD</div>
+                        <div class="teacher">PR</div>
+                    </td>
+                    <td>
+                        <div class="subject">Eng Lit</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td>
+                        <div class="subject">F/H/G</div>
+                        <div class="teacher">RC/KZ/MS</div>
+                    </td>
+                    <td>
+                        <div class="subject">Math</div>
+                        <div class="teacher">BP</div>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="day">We</td>
+                    <td>
+                        <div class="subject">ASM</div>
+                        <div class="teacher">JB</div>
+                    </td>
+                    <td>
+                        <div class="subject">INS</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td>
+                        <div class="subject">SPE</div>
+                    </td>
+                    <td>
+                        <div class="subject">TL</div>
+                        <div class="teacher">KZ/PC</div>
+                    </td>
+                    <td>
+                        <div class="subject">PE</div>
+                        <div class="teacher">KT</div>
+                    </td>
+                    <td>
+                        <div class="subject">Math</div>
+                        <div class="teacher">BP</div>
+                    </td>
+                    <td>
+                        <div class="subject">Eng Lit</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td>
+                        <div class="subject">Phy</div>
+                        <div class="teacher">VP</div>
+                    </td>
+                    <td>
+                        <div class="subject">Eng Lit</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="day">Th</td>
+                    <td>
+                        <div class="subject">ASM</div>
+                        <div class="teacher">JB</div>
+                    </td>
+                    <td>
+                        <div class="subject">LS</div>
+                        <div class="teacher">SS</div>
+                    </td>
+                    <td>
+                        <div class="subject">SPE</div>
+                    </td>
+                    <td>
+                        <div class="subject">F/H/G</div>
+                        <div class="teacher">RC/KZ/MS</div>
+                    </td>
+                    <td>
+                        <div class="subject">Chem</div>
+                        <div class="teacher">JB</div>
+                    </td>
+                    <td>
+                        <div class="subject">Math</div>
+                        <div class="teacher">BP</div>
+                    </td>
+                    <td>
+                        <div class="subject">Eng Lang</div>
+                        <div class="teacher">KC</div>
+                    </td>
+                    <td>
+                        <div class="subject">Lib</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td>
+                        <div class="subject">INS</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="day">Fr</td>
+                    <td>
+                        <div class="subject">ASM</div>
+                        <div class="teacher">JB</div>
+                    </td>
+                    <td>
+                        <div class="subject">INS</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td>
+                        <div class="subject">DD</div>
+                        <div class="teacher">PR</div>
+                    </td>
+                    <td>
+                        <div class="subject">Phy</div>
+                        <div class="teacher">VP</div>
+                    </td>
+                    <td>
+                        <div class="subject">F/H/G</div>
+                        <div class="teacher">RC/KZ/MS</div>
+                    </td>
+                    <td>
+                        <div class="subject">Eng Lang</div>
+                        <div class="teacher">KC</div>
+                    </td>
+                    <td>
+                        <div class="subject">INS</div>
+                        <div class="teacher">NM</div>
+                    </td>
+                    <td>
+                        <div class="subject">Bio</div>
+                        <div class="teacher">BB</div>
+                    </td>
+                    <td>
+                        <div class="subject">LS</div>
+                        <div class="teacher">SS</div>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
