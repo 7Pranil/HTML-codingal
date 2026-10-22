@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to bottom, blue, lightblue);
+            background-repeat: no-repeat;
+            padding: 30px;
+            text-align: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: magenta;
+        }
+        h1+p {
+            background-color: lightblue;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color:brown;
+            display: inline-block;
+        }
+        ul {
+            margin-top : 20px;
+            padding: 0;
+        }
+        ul > li {
+            list-style-type: none;
+            background-color: lightblue;
+            margin: 6px auto;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color:black;
+            width: 260px;
+        }
+        ul li:nth-child(3) {
+            background-color: lightgreen;
+            color: darkgreen;
+        }
+        .description {
+            color: darkblue;
+            margin-top: 20px;
+            font-size: 15px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .description::first-letter {
+            font-size: 220%;
+            font-weight: bold;
+            color: darkred;
+        }
+        .links {
+            margin-top: 25px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: darkblue;
+            padding: 8px 18px;
+            border: 2px solid white;
+            margin: 0 12px;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: lightblue;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Food Menu</h1>
+    <p>Welcome to my food menu! Pick your favorite dish.</p>
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Noodles-Chef's Special</li>
+        <li>Tacos</li>
+        <li>Ice Cream</li>
+    </ul>
+    <p class="description">Every meal is made with love and lots of flavour. Try our Chef's Special!</p>
+
+    <div class="links">
+        <a href="#">Order Now</a>
+        <a href="#">View Full Menu</a>
+    </div>
+</body>
+</html>
