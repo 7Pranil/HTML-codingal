@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo Rescue Tracker</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: static;
+            background-color: #2c2c2c;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            height: 400px;
+            margin: 40px auto;
+            background-color: #333333;
+            border: 2px dashed #777777;
+        }
+
+        .base-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 100px;
+            background-color: #4a90e2;
+            padding: 10px;
+        }
+
+        .overlay-box {
+            position: absolute;
+            top: 90px;
+            left: 100px;
+            width: 150px;
+            height: 100px;
+            background-color: #e74c3c;
+            padding: 10px;
+        }
+
+        .fixed-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2ecc71;
+            padding: 10px 20px;
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Zoo Rescue Tracker</h1>
+        <p>Demonstrating CSS Positioning</p>
+    </div>
+
+    <div class="container">
+        <div class="base-box">Static / Relative Box</div>
+        <div class="overlay-box">Absolute Box</div>
+    </div>
+
+    <div class="fixed-badge">Fixed Status Bar</div>
+
+</body>
+
+</html>
